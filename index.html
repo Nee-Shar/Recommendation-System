@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles2.css" />
+</head>
+
+<body>
+    <nav class="navbar  mb-4 " data-bs-theme="dark" style="background-color:  rgba(17, 25, 40, 0.25);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./Images/male_boy_person_people_avatar_icon_159358.svg" id="UserAvatar" alt="Logo" width="50"
+                    height="50" class="d-inline-block align-text-top">
+                <span id="UserName" class="ms-4"> USERNAME</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container text-center" id="q0">
+
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-0 img-fluid"> </div>
+                        <h1 class="mt-2">This or That</h1>
+                        <p> A series of fun questions </p>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-white">Insta Handle</label>
+                            <input type="text" class="form-control text-center" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text text-white">
+                                We'll never share your handle with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label text-white">
+                                Username
+                            </label>
+                            <input type="text" class="form-control text-center" id="userName1"
+                                aria-describedby="userHelp" />
+                            <div id="userHelp" class="form-text text-white">
+                                Thats what you want to be called.
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="mb-3 form-check mt-2">
+
+
+
+                        </div>
+                    </form>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page0to1">PROCEED</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="q11" class="container-2">
+        <button type="button" class="btn btn-primary fill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Select your Avatar
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+                            Select Your Avatar
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img title="Harvey Quinn"
+                                        src="./Images/4043270-avatar-joker-squad-suicide-woman_113256.svg" />
+                                    1
+                                </div>
+                                <div class="col-md-4 ms-auto">
+                                    <img title="Bataman" src="./Images/batman_90804.svg" />
+                                    2
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img title="Ronaldo" src="./Images/cristianoronaldo_90805.svg" />
+                                    3
+                                </div>
+                                <div class="col-md-4 ms-auto">
+                                    <img title="Native man" src="./Images/nativeman_90827.svg" />
+                                    4
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img title="Robot" src="./Images/robot01_90832.svg" />
+                                    5
+                                </div>
+                                <div class="col-md-4 ms-auto">
+                                    <img title="Trinity" src="./Images/trinity_90829.svg" />
+                                    6
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img title="Woman" src="./Images/indianwoman_90828.svg" />
+                                    7
+                                </div>
+                                <div class="col-md-4 ms-auto">
+                                    <img title="Charlie Chaplin" src="./Images/charliechaplin_90809.svg" />
+                                    8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Avatar" class="form-label text-center f ms-4 fw-bold">Your Avatar</label>
+                        <input type="text" id="avatarId" class="form-control text-center" id="Avatar" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary" id="userAvatarSubmit" data-bs-dismiss="modal">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center hidden" id="q1">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-1 img-fluid"> </div>
+                        <h1 class="mt-2">Christopher Nolan's Batman Trilogy</h1>
+                        <p>2005-2012
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page1to2a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-2 img-fluid"> </div>
+                        <h1 class="mt-2">Marvel's Avengers Phase 3 Series</h1>
+                        <p>2008-2019</p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page1to2b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container text-center hidden" id="q2">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-3 img-fluid"> </div>
+                        <h1 class="mt-2">Harry Potter Series</h1>
+                        <p>2001-2011
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page2to3a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-4 img-fluid"> </div>
+                        <h1 class="mt-2">Lord of the Rings Series</h1>
+                        <p>1937-2022</p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page2to3b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container text-center hidden" id="q3">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-5 img-fluid"> </div>
+                        <h1 class="mt-2">E-Sports</h1>
+                        <p>(FIFA, Fortnite , PUBG, COD, Valorant, Dota 2, CS:GO)
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page3to4a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-6 img-fluid"> </div>
+                        <h1 class="mt-2">Outdoor Sports</h1>
+                        <p>(Football , Cricket , Basketball , Badminton )</p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page3to4b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container text-center hidden" id="q4">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-7 img-fluid"> </div>
+                        <h1 class="mt-2">Friends</h1>
+                        <p>1994-2004
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page4to5a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-8 img-fluid"> </div>
+                        <h1 class="mt-2">The Office</h1>
+                        <p>
+                            2005-2013
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page4to5b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container text-center hidden" id="q5">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-9 img-fluid"> </div>
+                        <h1 class="mt-2">Foodie tour</h1>
+                        <p>🍩🍜🍔🍕
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page5to6a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-10 img-fluid"> </div>
+                        <h1 class="mt-2">Historical sightseeing</h1>
+                        <p>
+                            🏰🕌🏯🏟️
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page5to6b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container text-center hidden" id="q6">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-11 img-fluid"> </div>
+                        <h1 class="mt-2">Naruto</h1>
+                        <p> 2002-2017
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page6to7a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-12 img-fluid"> </div>
+                        <h1 class="mt-2">One Piece</h1>
+                        <p>
+                            1999-2022
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page6to7b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container text-center hidden" id="q7">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-13 img-fluid"> </div>
+                        <h1 class="mt-2">Ed Sheeran</h1>
+                        <p> (Perfect , Shape of You , Castle on the Hill, Thinking Out Loud)
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page7to8a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-14 img-fluid"> </div>
+                        <h1 class="mt-2">Shawn Mendes</h1>
+                        <p>
+                            (Stitches , Treat You Better , In My Blood , There's Nothing Holdin' Me Back)
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page7to8b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container text-center hidden" id="q8">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-15 img-fluid"> </div>
+                        <h1 class="mt-2">Call Person </h1>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page8to9a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-16 img-fluid"> </div>
+                        <h1 class="mt-2">Text Person</h1>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page8to9b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container text-center hidden" id="q9">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-17 img-fluid"> </div>
+                        <h1 class="mt-2">Virat Kohli</h1>
+                        <p>
+                            82* (53) vs Pakistan, 2022
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" type="submit" id="page9to10a">SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-18 img-fluid"> </div>
+                        <h1 class="mt-2">Sachin Tendulkar</h1>
+                        <p>
+                            143 (131) & 1/27 vs Australia, 1998
+
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page9to10b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container text-center hidden" id="q10">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-19 img-fluid"> </div>
+                        <h1 class="mt-2">Fight 100 duck-sized horses</h1>
+                        <p>
+                            🐎
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page10to11a" type="submit"> SELECT</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col ms-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="banner-image-20 img-fluid"> </div>
+                        <h1 class="mt-2">Fight a horse sized duck</h1>
+                        <p>
+                            🦆
+
+                        </p>
+                    </div>
+                    <div class="button-wrapper">
+
+                        <button class="btn fill" id="page10to11b">SELECT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container text-center hidden " id="q12">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col ms-2 mr-2 mt-2">
+
+                <div class="container">
+                    <div class="wrapper d-flex justify-content-center">
+
+                        <img src="./Images/batman_90804.svg" class="rounded mx-auto d-block img-fluid"
+                            id="final_page_p_img" style="min-width: 12rem; min-height: 12rem;" alt="...">
+                    </div>
+                    <div class="container">
+                        <h2 class="text-center" id="final_page_username"></h2>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row ">
+            <div class="col-4 ">
+
+                <div class=" d-flex justify-content-center">
+
+                    <img src="./Images/charliechaplin_90809.svg" class="rounded mx-auto d-block img-fluid"
+                        style="min-width: 8rem; min-height: 8rem;" alt="..." id="recom_1_img">
+
+
+                </div>
+                <p id="recom_1_username"></p>
+
+
+            </div>
+            <div class="col-4 ">
+                <div class=" d-flex justify-content-center">
+
+                    <img src="./Images/cristianoronaldo_90805.svg" class="rounded mx-auto d-block img-fluid"
+                        style="min-width: 8rem; min-height: 8rem;" alt="..." id="recom_2_img">
+                </div>
+                <p id="recom_2_username"></p>
+            </div>
+            <div class="col-4 ">
+
+                <div class=" d-flex justify-content-center">
+
+                    <img src="./Images/trinity_90829.svg" class="rounded mx-auto d-block img-fluid"
+                        style="min-width: 8rem; min-height: 8rem;" alt="..." id="recom_3_img">
+
+                </div>
+                <p id="recom_3_username"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="app2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recommend</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar  mb-4 bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/male_boy_person_people_avatar_icon_159358.svg" id="UserAvatar" alt="Logo" width="50"
+          height="50" class="d-inline-block align-text-top">
+        <span id="UserName" class="ms-4"> USERNAME</span>
+      </a>
+    </div>
+  </nav>
+  <!--  src="https://www.sorryonmute.com/wp-content/uploads/2022/06/302_-tell-me-about-yourself-1024x658.png" -->
+  <div class="container text-center mt-4" id="page1">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-3" src="./Images/hyxcpr9x.png" />
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Insta Handle</label>
+            <input type="text" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div id="emailHelp" class="form-text">
+              We'll never share your handle with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">
+              Username
+            </label>
+            <input type="text" class="form-control text-center" id="userName1" aria-describedby="userHelp" />
+            <div id="userHelp" class="form-text">
+              Thats what you want to be called.
+            </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="emoji" class="form-label">
+              Emoji
+            </label>
+            <input type="text" class="form-control text-center" id="emoji" aria-describedby="emojiHelp" />
+            <div id="emojiHelp" class="form-text">
+              Describes your mood.
+            </div>
+          </div>
+
+
+
+          <div class="mb-3 form-check mt-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Select your Avatar
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+                      Select Your Avatar
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img title="Harvey Quinn"
+                            src="./Images/4043270-avatar-joker-squad-suicide-woman_113256.svg" />
+                          1
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                          <img title="Bataman" src="./Images/batman_90804.svg" />
+                          2
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img title="Ronaldo" src="./Images/cristianoronaldo_90805.svg" />
+                          3
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                          <img title="Native man" src="./Images/nativeman_90827.svg" />
+                          4
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img title="Robot" src="./Images/robot01_90832.svg" />
+                          5
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                          <img title="Trinity" src="./Images/trinity_90829.svg" />
+                          6
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img title="Woman" src="./Images/indianwoman_90828.svg" />
+                          7
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                          <img title="Charlie Chaplin" src="./Images/charliechaplin_90809.svg" />
+                          8
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Avatar" class="form-label">Your Avatar</label>
+                    <input type="text" id="avatarId" class="form-control text-center" id="Avatar" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary" id="userAvatarSubmit" data-bs-dismiss="modal">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="page1to2">Next</button>
+        </form>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            Basic Information
+          </a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container text-center mt-4 hidden" id="page2">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-2"
+          src="https://img.freepik.com/premium-photo/generative-ai-neon-gamer-anime-fashion-girl-woman-wearing-headphones-lost-her-music-abstract-background-that-evokes-feeling-different-genres-music-banner-music-concept_620624-8918.jpg" />
+        <div class="container text-center">
+          <div class="row"></div>
+          Answer all answers in range [0,10]
+          <div class="row mt-2">
+            <div class="col-8 que-text">How diverse is your music taste, with 1 being very narrow and 10 being extremely
+              diverse?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange1" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How often do you find yourself humming or singing along to songs?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange2" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">When listening to music, how much attention do you pay to the lyrics</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange3" required />
+              <output for="customRange3"> </output>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you enjoy dancing to music?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange4" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How likely are you to explore different genres of music?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="page2to3">
+                Next
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="" class="list-group-item list-group-item-action disabled bg-dark text-white">
+            Basic Information
+          </a>
+          <a href="#" aria-current="true" class="list-group-item list-group-item-action active mt-2">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="container text-center mt-4 hidden" id="page3">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-2"
+          src="https://images-cdn.ubuy.co.in/6406ce04aa952d34850d0015-horror-movies-poster-on-canvas-wall-art.jpg" />
+        <div class="container text-center">
+          <div class="row"></div>
+          Answer all answers in range [0,10]
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Comedy Movies?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange1" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Romantic Movies?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange2" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Thriller Movies?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange3" required />
+              <output for="customRange3"> </output>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Superhero Movies?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange4" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Horror Movies?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Science Ficiton Movies?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange6" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Animated Movies?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange7" required />
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="page3to4">
+                Next
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="" class="list-group-item list-group-item-action disabled bg-dark text-white">
+            Basic Information
+          </a>
+          <a href="" class="list-group-item list-group-item-action mt-2 disabled bg-dark text-white">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 active " aria-current="true">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container text-center mt-4 hidden" id="page4">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-2"
+          src="https://img.freepik.com/premium-photo/colorful-vector-art-minimalistic-silhouette-person-running-ai-generated_731790-13163.jpg" />
+        <div class="container text-center">
+          <div class="row"></div>
+          Answer all answers in range [0,10]
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Outdoor Sports?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange1" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you like Indoor Sports?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange2" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">Do you follow sporting events around the globe?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange3" required />
+              <output for="customRange3"> </output>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How likely you are to play a sport?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange4" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">On a scale of 1 to 10, with 1 being <strong>'never'</strong> and 10 being
+              <strong>'very frequently'</strong> how often do you go to the gym?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="page4to5">
+                Next
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="" class="list-group-item list-group-item-action disabled bg-dark text-white">
+            Basic Information
+          </a>
+          <a href="" class="list-group-item list-group-item-action mt-2 disabled bg-dark text-white">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 active " aria-current="true">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container text-center mt-4 hidden" id="page5">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-2"
+          src="https://img.freepik.com/free-vector/comic-bright-composition-with-explosive-halftone-rays_225004-794.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707609600&semt=ais" />
+        <div class="container text-center">
+          <div class="row"></div>
+          Answer all answers in range [0,10]
+          <div class="row mt-2">
+            <div class="col-8 que-text">How often do you read books for pleasure</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange1" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How important do you think reading is for personal development?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange2" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much value do you find in discussing books with others?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange3" required />
+              <output for="customRange3"> </output>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you enjoy attending comic conventions or expos?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange4" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How eagerly do you anticipate comic book movie adaptations?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="page5to6">
+                Next
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="" class="list-group-item list-group-item-action disabled bg-dark text-white">
+            Basic Information
+          </a>
+          <a href="" class="list-group-item list-group-item-action mt-2 disabled bg-dark text-white">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled ">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 active" aria-current="true">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container text-center mt-4 hidden" id="page6">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-2"
+          src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2023_04/story_31922/assets/2.jpeg?time=1681814685&size=*:500" />
+        <div class="container text-center">
+          <div class="row"></div>
+          Answer all answers in range [0,10]
+          <div class="row mt-2">
+            <div class="col-8 que-text">How adventurous are you when it comes to trying new foods?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange1" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you enjoy cooking or baking?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange2" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">When it comes to spicy food, how much heat can you handle?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange3" required />
+              <output for="customRange3"> </output>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">When it comes to desserts, how sweet is your tooth?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange4" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How likely you are to eat street food?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="page6to7">
+                Next
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="" class="list-group-item list-group-item-action disabled bg-dark text-white">
+            Basic Information
+          </a>
+          <a href="" class="list-group-item list-group-item-action mt-2 disabled bg-dark text-white">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled ">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled"
+            aria-current="true">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 active">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container text-center mt-4 hidden" id="page7">
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-7">
+        <img class="img-fluid mb-2"
+          src="https://c.wallhere.com/photos/0f/3f/Stable_Diffusion_4K_AI_art_landscape_digital_art_illustration_nature_sunset_glow-2215688.jpg!s1" />
+        <div class="container text-center">
+          <div class="row"></div>
+          Answer all answers in range [0,10]
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you enjoy traveling?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange1" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How adventurous are you when it comes to trying new destinations?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange2" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you enjoy immersing yourself in the local culture and traditions
+              when traveling?</div>
+            <div class="col-4">
+              <input type="number" class="form text-center" min="0" max="10" id="customRange3" required />
+              <output for="customRange3"> </output>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">When traveling, how much do you prioritize relaxation versus adventure?</div>
+            <div class="col-4">
+              <!-- text box -->
+              <input type="number" class="form text-center" min="0" max="10" id="customRange4" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How much do you enjoy documenting your travels through photography or journaling
+            </div>
+            <div class="col-4">
+
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-8 que-text">How likely are you to engage in spontaneous activities or excursions while
+              traveling</div>
+            <div class="col-4">
+
+              <input type="number" class="form text-center" min="0" max="10" id="customRange5" required />
+            </div>
+          </div>
+
+
+          <div class="row mt-4">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" id="page7to8">
+                Next
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="list-group fw-bold">
+          <a href="" class="list-group-item list-group-item-action disabled bg-dark text-white">
+            Basic Information
+          </a>
+          <a href="" class="list-group-item list-group-item-action mt-2 disabled bg-dark text-white">Music</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled">Movies</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled ">Sports</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 bg-dark text-white disabled"
+            aria-current="true">Books</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2  bg-dark text-white disabled">Food</a>
+          <a href="#" class="list-group-item list-group-item-action mt-2 active">Travel</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="page8">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>WOW !</strong> You just completed filling the form.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="container text-center">
+
+      <div class="row">
+
+        <div class="row  justify-content-center ">
+
+          <img id="avatarineed" src="" class="LastImage">
+
+
+          <section id="team" class="team-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="site-heading text-center">
+                    <h2 id="ineedusername"></h2>
+                    <h4></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row team-items">
+                <div class="col-md-4 single-item">
+                  <div class="item">
+                    <div class="thumb">
+                      <img class="img-fluid" style="border-radius: 50%;" src="https://i.ibb.co/JC4skS0/team-animate.jpg"
+                        alt="Thumb">
+                      <div class="overlay">
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+
+                      </div>
+                    </div>
+                    <div class="info">
+
+                      <h4>Lorem Ipsum</h4>
+                      <span>Project Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 single-item">
+                  <div class="item">
+                    <div class="thumb">
+                      <img class="img-fluid" style="border-radius: 50%;" src="https://i.ibb.co/JC4skS0/team-animate.jpg"
+                        alt="Thumb">
+                      <div class="overlay">
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                          kING.
+                        </p>
+
+                      </div>
+                    </div>
+                    <div class="info">
+
+                      <h4>Lorem Ipsum</h4>
+                      <span>App Developer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 single-item">
+                  <div class="item">
+                    <div class="thumb">
+                      <img class="img-fluid" style="border-radius: 50%;" src="https://i.ibb.co/JC4skS0/team-animate.jpg"
+                        alt="Thumb">
+                      <div class="overlay">
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+
+                      </div>
+                    </div>
+                    <div class="info">
+
+                      <h4>Lorem Ipsum</h4>
+                      <span>Web designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <ul>
+            <li id="firstRes"></li>
+            <li id="secondRes"></li>
+            <li id="thirdRes"></li>
+            <li id="fourthRes"></li>
+            <li id="fifthRes"></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
