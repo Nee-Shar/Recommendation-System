@@ -226,8 +226,9 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
       data.recommendation.forEach((userID) => {
         getParticularUser(userID)
           .then((user) => {
-            const name = user.Username;
-            const avatarId = user.Avatar;
+            const name = user.name;
+            const avatarId = user.avatarId;
+
             names.push(name);
             avatars.push(avatarId);
           })
