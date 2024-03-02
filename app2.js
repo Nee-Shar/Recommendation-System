@@ -185,7 +185,6 @@ document.getElementById("page9to10b").addEventListener("click", function () {
 document.getElementById("page10to11a").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("q10").style.display = "none";
-  document.getElementById("q12").style.display = "block";
 
   localStorage.setItem("q10", 1);
   const formattedData = [
@@ -268,7 +267,7 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
           localStorage.setItem("rec_ava2", avatars[2]);
           localStorage.setItem("rec_ava3", avatars[3]);
 
-          window.location.href = "hey.html";
+          window.location.href = "./hey.html";
           // document.getElementById("q12").style.display = "block";
           // document.getElementById("final_page_p_img").src = giveImgUrl(
           //   localStorage.getItem("avaid")
