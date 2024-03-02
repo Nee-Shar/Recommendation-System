@@ -261,12 +261,12 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
           console.log(names);
           console.log(avatars);
 
-          localStorage.setItem("rec1", names[0]); // Note: Arrays are 0-indexed in JavaScript
-          localStorage.setItem("rec2", names[1]);
-          localStorage.setItem("rec3", names[2]);
-          localStorage.setItem("rec_ava1", avatars[0]);
-          localStorage.setItem("rec_ava2", avatars[1]);
-          localStorage.setItem("rec_ava3", avatars[2]);
+          localStorage.setItem("rec1", names[1]); // Note: Arrays are 0-indexed in JavaScript
+          localStorage.setItem("rec2", names[2]);
+          localStorage.setItem("rec3", names[3]);
+          localStorage.setItem("rec_ava1", avatars[1]);
+          localStorage.setItem("rec_ava2", avatars[2]);
+          localStorage.setItem("rec_ava3", avatars[3]);
 
           document.getElementById("q12").style.display = "block";
           document.getElementById("final_page_p_img").src = giveImgUrl(
