@@ -223,27 +223,55 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
 
       console.log("Recommendation:", data.recommendation);
 
-      data.recommendation.forEach((userID) => {
+      // data.recommendation.forEach((userID) => {
+      //   getParticularUser(userID)
+      //     .then((user) => {
+      //       const name = user.name;
+      //       const avatarId = user.avatarId;
+
+      //       names.push(name);
+      //       avatars.push(avatarId);
+      //     })
+      //     .catch((error) => {
+      //       console.error("Error getting particular user:", error);
+      //     });
+      // });
+      // console.log(names);
+      // console.log(avatars);
+      // localStorage.setItem("rec1", names[1]);
+      // localStorage.setItem("rec2", names[2]);
+      // localStorage.setItem("rec3", names[3]);
+      // localStorage.setItem("rec_ava1", avatars[1]);
+      // localStorage.setItem("rec_ava2", avatars[2]);
+      // localStorage.setItem("rec_ava3", avatars[3]);
+
+      const promises = data.recommendation.map((userID) =>
         getParticularUser(userID)
-          .then((user) => {
+      );
+
+      Promise.all(promises)
+        .then((users) => {
+          users.forEach((user) => {
             const name = user.name;
             const avatarId = user.avatarId;
-
             names.push(name);
             avatars.push(avatarId);
-          })
-          .catch((error) => {
-            console.error("Error getting particular user:", error);
           });
-      });
-      console.log(names);
-      console.log(avatars);
-      localStorage.setItem("rec1", names[1]);
-      localStorage.setItem("rec2", names[2]);
-      localStorage.setItem("rec3", names[3]);
-      localStorage.setItem("rec_ava1", avatars[1]);
-      localStorage.setItem("rec_ava2", avatars[2]);
-      localStorage.setItem("rec_ava3", avatars[3]);
+
+          console.log(names);
+          console.log(avatars);
+
+          localStorage.setItem("rec1", names[0]); // Note: Arrays are 0-indexed in JavaScript
+          localStorage.setItem("rec2", names[1]);
+          localStorage.setItem("rec3", names[2]);
+          localStorage.setItem("rec_ava1", avatars[0]);
+          localStorage.setItem("rec_ava2", avatars[1]);
+          localStorage.setItem("rec_ava3", avatars[2]);
+        })
+        .catch((error) => {
+          console.error("Error getting particular users:", error);
+        });
+
       document.getElementById("q12").style.display = "block";
       document.getElementById("final_page_p_img").src = giveImgUrl(
         localStorage.getItem("avaid")
