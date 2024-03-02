@@ -231,6 +231,12 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
 
             names.push(name);
             avatars.push(avatarId);
+            localStorage.setItem("rec1", names[1]);
+            localStorage.setItem("rec2", names[2]);
+            localStorage.setItem("rec3", names[3]);
+            localStorage.setItem("rec_ava1", avatars[1]);
+            localStorage.setItem("rec_ava2", avatars[2]);
+            localStorage.setItem("rec_ava3", avatars[3]);
           })
           .catch((error) => {
             console.error("Error getting particular user:", error);
@@ -245,12 +251,21 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
       document.getElementById("final_page_username").innerText =
         localStorage.getItem("name");
 
-      document.getElementById("recom_1_img").src = giveImgUrl(avatars[1]);
-      document.getElementById("recom_1_username").innerText = names[1];
-      document.getElementById("recom_2_img").src = giveImgUrl(avatars[2]);
-      document.getElementById("recom_2_username").innerText = names[2];
-      document.getElementById("recom_3_img").src = giveImgUrl(avatars[3]);
-      document.getElementById("recom_3_username").innerText = names[3];
+      document.getElementById("recom_1_img").src = giveImgUrl(
+        localStorage.getItem("rec_ava1")
+      );
+      document.getElementById("recom_1_username").innerHTML =
+        localStorage.getItem("rec1");
+      document.getElementById("recom_2_img").src = giveImgUrl(
+        localStorage.getItem("rec_ava2")
+      );
+      document.getElementById("recom_2_username").innerHTML =
+        localStorage.getItem("rec2");
+      document.getElementById("recom_3_img").src = giveImgUrl(
+        localStorage.getItem("rec_ava3")
+      );
+      document.getElementById("recom_3_username").innerHTML =
+        localStorage.getItem("rec3");
 
       document.getElementById("q10").style.display = "none";
     })
