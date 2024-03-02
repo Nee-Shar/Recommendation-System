@@ -235,7 +235,8 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
             console.error("Error getting particular user:", error);
           });
       });
-
+      console.log(names);
+      console.log(avatars);
       document.getElementById("q12").style.display = "block";
       document.getElementById("final_page_p_img").src = giveImgUrl(
         localStorage.getItem("avaid")
@@ -243,12 +244,12 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
       document.getElementById("final_page_username").innerText =
         localStorage.getItem("name");
 
-      document.getElementById("recom_1_img").src = giveImgUrl(avatars[0]);
-      document.getElementById("recom_1_username").innerText = names[0];
-      document.getElementById("recom_2_img").src = giveImgUrl(avatars[1]);
-      document.getElementById("recom_2_username").innerText = names[1];
-      document.getElementById("recom_3_img").src = giveImgUrl(avatars[2]);
-      document.getElementById("recom_3_username").innerText = names[2];
+      document.getElementById("recom_1_img").src = giveImgUrl(avatars[1]);
+      document.getElementById("recom_1_username").innerText = names[1];
+      document.getElementById("recom_2_img").src = giveImgUrl(avatars[2]);
+      document.getElementById("recom_2_username").innerText = names[2];
+      document.getElementById("recom_3_img").src = giveImgUrl(avatars[3]);
+      document.getElementById("recom_3_username").innerText = names[3];
 
       document.getElementById("q10").style.display = "none";
     })
