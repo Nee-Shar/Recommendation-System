@@ -145,6 +145,23 @@ function getParticularUser(userID) {
 
 var names = [];
 var avatars = [];
+function changeCssofFinalPage() {
+  document.getElementById("recom_1_img").src = giveImgUrl(
+    localStorage.getItem("rec_ava1")
+  );
+  document.getElementById("recom_1_username").innerHTML =
+    localStorage.getItem("rec1");
+  document.getElementById("recom_2_img").src = giveImgUrl(
+    localStorage.getItem("rec_ava2")
+  );
+  document.getElementById("recom_2_username").innerHTML =
+    localStorage.getItem("rec2");
+  document.getElementById("recom_3_img").src = giveImgUrl(
+    localStorage.getItem("rec_ava3")
+  );
+  document.getElementById("recom_3_username").innerHTML =
+    localStorage.getItem("rec3");
+}
 function GetRecommendation(userID) {
   console.log("Request URL:", `http://localhost:8000/recommend/${userID}`);
   fetch(`http://localhost:8000/recommend/${userID}`, {
@@ -277,21 +294,7 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
           // document.getElementById("final_page_username").innerText =
           //   localStorage.getItem("name");
 
-          document.getElementById("recom_1_img").src = giveImgUrl(
-            localStorage.getItem("rec_ava1")
-          );
-          document.getElementById("recom_1_username").innerHTML =
-            localStorage.getItem("rec1");
-          document.getElementById("recom_2_img").src = giveImgUrl(
-            localStorage.getItem("rec_ava2")
-          );
-          document.getElementById("recom_2_username").innerHTML =
-            localStorage.getItem("rec2");
-          document.getElementById("recom_3_img").src = giveImgUrl(
-            localStorage.getItem("rec_ava3")
-          );
-          document.getElementById("recom_3_username").innerHTML =
-            localStorage.getItem("rec3");
+          changeCssofFinalPage();
         })
         .catch((error) => {
           console.error("Error getting particular users:", error);
