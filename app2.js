@@ -268,6 +268,8 @@ document.getElementById("page10to11a").addEventListener("click", function (e) {
           localStorage.setItem("rec_ava3", avatars[3]);
 
           window.location.href = "./hey.html";
+
+          console.log(localStorage.getItem("rec1"));
           // document.getElementById("q12").style.display = "block";
           // document.getElementById("final_page_p_img").src = giveImgUrl(
           //   localStorage.getItem("avaid")
