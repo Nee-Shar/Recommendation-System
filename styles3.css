@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
 body {
-  font-family: tahoma;
   height: 100vh;
   background-image: url(https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: cover;
@@ -108,4 +110,13 @@ body {
 .our-team .social li a:hover {
   color: #1369ce;
   background-color: #f7f5ec;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Righteous", sans-serif;
+  color: rgba(255, 255, 255, 0.98);
+
+  font-size: 2.4rem;
 }
