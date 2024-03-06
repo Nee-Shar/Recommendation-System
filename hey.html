@@ -141,6 +141,26 @@
 
     </div> -->
     <script>
+
+        function giveImgUrl(avaid) {
+            if (avaid === "1") {
+                return "./Images/4043270-avatar-joker-squad-suicide-woman_113256.svg";
+            } else if (avaid == "2") {
+                return "./Images/batman_90804.svg";
+            } else if (avaid === "3") {
+                return "./Images/cristianoronaldo_90805.svg";
+            } else if (avaid === "4") {
+                return "./Images/nativeman_90827.svg";
+            } else if (avaid === "5") {
+                return "./Images/robot01_90832.svg";
+            } else if (avaid === "6") {
+                return "./Images/trinity_90829.svg";
+            } else if (avaid === "7") {
+                return "./Images/indianwoman_90828.svg";
+            } else {
+                return "./Images/charliechaplin_90809.svg";
+            }
+        }
         function loadRecommendations() {
             console.log(localStorage.getItem("rec1"));
 
